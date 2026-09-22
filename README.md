@@ -1,14 +1,4 @@
-﻿---
-title: Ecommerce Sentiment API
-emoji: 🚀
-colorFrom: blue
-colorTo: indigo
-sdk: docker
-app_port: 7860
-pinned: false
----
-
-# Ecommerce Sentiment Analysis Engine
+﻿# Ecommerce Sentiment Analysis Engine
 
 Sentipulse is a full-stack ecommerce sentiment analysis application. It accepts customer feedback documents, extracts review text, classifies sentiment, and presents the results in a dashboard with summary metrics and review-level confidence scores.
 
