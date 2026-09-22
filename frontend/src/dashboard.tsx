@@ -5,6 +5,8 @@ import {
   FileText, ArrowUpRight, X, Loader2
 } from 'lucide-react';
 
+const API_BASE_URL = import.meta.env.VITE_API_URL ?? '/api';
+
 interface Summary {
   total_reviews: number;
   positive_count: number;
@@ -57,7 +59,7 @@ export default function Dashboard() {
     formData.append('file', file);
 
     try {
-      const response = await fetch('http://localhost:8000/api/analyze', {
+      const response = await fetch(`${API_BASE_URL}/analyze`, {
         method: 'POST',
         body: formData,
       });
