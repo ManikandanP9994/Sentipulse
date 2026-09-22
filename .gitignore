@@ -1,0 +1,12 @@
+# Python local environments and caches
+backend/venv/
+__pycache__/
+*.py[cod]
+
+# Local editor configuration
+.vscode/
+
+# Environment files
+.env
+.env.*
+!.env.example
