@@ -110,7 +110,7 @@ def extract_text(file_bytes: bytes, filename: str) -> str:
             dialect = csv.excel
 
         try:
-            rows = list(csv.reader(io.StringIO(csv_text), dialect))
+            rows = list(csv.reader(io.StringIO(csv_text, newline=""), dialect))
         except csv.Error as error:
             raise HTTPException(status_code=400, detail=f"Invalid CSV data: {error}") from error
         if not rows:
